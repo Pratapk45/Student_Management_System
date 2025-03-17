@@ -23,10 +23,6 @@ public class StudentEntity
     private String studLastName;
     private String email;
     private String gender;
-    private String address;
-    private String dOB;
-    private String joining_Date;
-    private Integer mobile_no;
 
     public String getStudFirstName() {
         return studFirstName;
@@ -60,35 +56,5 @@ public class StudentEntity
         this.gender = gender;
     }
 
-    public String getAddress() {
-        return address;
-    }
 
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
-    public String getdOB() {
-        return dOB;
-    }
-
-    public void setdOB(String dOB) {
-        this.dOB = dOB;
-    }
-
-    public String getJoining_Date() {
-        return joining_Date;
-    }
-
-    public void setJoining_Date(String joining_Date) {
-        this.joining_Date = joining_Date;
-    }
-
-    public Integer getMobile_no() {
-        return mobile_no;
-    }
-
-    public void setMobile_no(Integer mobile_no) {
-        this.mobile_no = mobile_no;
-    }
 }

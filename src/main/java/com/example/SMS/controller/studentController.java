@@ -14,7 +14,6 @@ import java.util.Optional;
 @RequestMapping("/student")
 public class studentController
 {
-
     @Autowired
     private StudentServices studentServices;
 

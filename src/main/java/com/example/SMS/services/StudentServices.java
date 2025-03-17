@@ -23,10 +23,6 @@ public class StudentServices {
         studentEntity.setStudLastName(studentDto.getStudLastName());
         studentEntity.setEmail(studentDto.getEmail());
         studentEntity.setGender(studentDto.getGender());
-        studentEntity.setAddress(studentDto.getAddress());
-        studentEntity.setdOB(studentDto.getdOB());
-        studentEntity.setJoining_Date(studentDto.getJoining_Date());
-        studentEntity.setMobile_no(studentDto.getMobile_no());
         studentRepo.save(studentEntity);
         return studentEntity;
 
@@ -52,10 +48,6 @@ public class StudentServices {
         existingdata.setStudLastName(studentDto.getStudLastName());
         existingdata.setEmail(studentDto.getEmail());
         existingdata.setGender(studentDto.getGender());
-        existingdata.setAddress(studentDto.getAddress());
-        existingdata.setdOB(studentDto.getdOB());
-        existingdata.setJoining_Date(studentDto.getJoining_Date());
-        existingdata.setMobile_no(studentDto.getMobile_no());
         return studentRepo.save(existingdata);
 
 
@@ -72,12 +64,9 @@ public class StudentServices {
 
 //        existingdata.setStudFirstName(studentDto.getStudFirstName());
 //        existingdata.setStudLastName(studentDto.getStudLastName());
-//        existingdata.setEmail(studentDto.getEmail());
-       // existingdata.setGender(studentDto.getGender());
-        existingdata.setAddress(studentDto.getAddress());
-//existingdata.setdOB(studentDto.getdOB());
-//        existingdata.setJoining_Date(studentDto.getJoining_Date());
-//        existingdata.setMobile_no(studentDto.getMobile_no());
+         existingdata.setEmail(studentDto.getEmail());
+        existingdata.setGender(studentDto.getGender());
+
         return studentRepo.save(existingdata);
     }
 
